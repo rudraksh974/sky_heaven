@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sky Heaven - Rooftop Restaurant | Orai</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background: url('https://www.finndit.com/blog/assets/upload_file/blog/best_restaurants_in_ahmedabad.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      padding: .01rem 1svi;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      color: #94cff0;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #f0f0f0;
+    }
+
+    nav {
+      background: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #f5f4eb;
+    }
+
+    .section {
+      background: rgba(128, 66, 66, 0.1);
+      margin: 2rem auto;
+      max-width: 1000px;
+      border-radius: 15px;
+      padding: 2rem;
+      backdrop-filter: blur(8px);
+    }
+
+    .section h2, .section h3 {
+      text-align: center;
+      color: #fdfcf6;
+    }
+
+    .menu-grid, .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .menu-item {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      color: #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .menu-item h3 {
+      margin: 0;
+      font-weight: 600;
+    }
+
+    .price {
+      color: #fefffe;
+      font-weight: bold;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 10px;
+      height: 200px;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    .contact-form {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 0.8rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    .contact-form button {
+      background: #97dced;
+      color: #050505;
+      font-weight: bold;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background: #e6c200;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+
+    .social-links {
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+
+    .social-links a {
+      color: #121211;
+      margin: 0 10px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: rgba(0, 0, 0, 0.7);
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sky Heaven</h1>
+    <p>Rooftop Restaurant · Orai</p>
+  </header>
+
+  <nav>
+    <a href="#starters">Starters</a>
+    <a href="#main">Main Course</a>
+    <a href="#drinks">Drinks</a>
+    <a href="#desserts">Desserts</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="section" id="starters">
+    <h2>Starters</h2>
+    <div class="menu-grid">
+      <div class="menu-item"><h3>Paneer Tikka</h3><p class="price">₹180</p></div>
+      <div class="menu-item"><h3>Veg Spring Rolls</h3><p class="price">₹150</p></div>
+      <div class="menu-item"><h3>Chicken Seekh Kebab</h3><p class="price">₹220</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="main">
+    <h2>Main Course</h2>
+    <div class="menu-grid">
+      <div class="menu-item"><h3>Butter masala</h3><p class="price">₹260</p></div>
+      <div class="menu-item"><h3>Paneer Butter Masala</h3><p class="price">₹210</p></div>
+      <div class="menu-item"><h3>Veg Biryani</h3><p class="price">₹190</p></div>
+      <div class="menu-item"><h3>Butter masala</h3><p class="price">₹260</p></div>
+      <div class="menu-item"><h3>Paneer Butter Masala</h3><p class="price">₹210</p></div>
+      <div class="menu-item"><h3>Veg Biryani</h3><p class="price">₹190</p></div><div class="menu-item"><h3>Butter masala</h3><p class="price">₹260</p></div>
+      <div class="menu-item"><h3>Paneer Butter Masala</h3><p class="price">₹210</p></div>
+      <div class="menu-item"><h3>Veg Biryani</h3><p class="price">₹190</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="drinks">
+    <h2>Drinks</h2>
+    <div class="menu-grid">
+      <div class="menu-item"><h3>Lemon Mojito</h3><p class="price">₹100</p></div>
+      <div class="menu-item"><h3>Cold Coffee</h3><p class="price">₹120</p></div>
+      <div class="menu-item"><h3>Masala Soda</h3><p class="price">₹80</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="desserts">
+    <h2>Desserts</h2>
+    <div class="menu-grid">
+      <div class="menu-item"><h3>Gulab Jamun</h3><p class="price">₹80</p></div>
+      <div class="menu-item"><h3>Chocolate Brownie</h3><p class="price">₹150</p></div>
+      <div class="menu-item"><h3>Ice Cream (2 Scoops)</h3><p class="price">₹100</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.iGOu1i6WwXjsQFwmb6zutgHaD4?pid=Api&P=0&h=180" alt="Rooftop" />
+      <img src="https://tse1.mm.bing.net/th/id/OIP.iOrECmgkBS7_jnjU2TbkGwAAAA?pid=Api&P=0&h=180" alt="Food" />
+      <img src="https://tse4.mm.bing.net/th/id/OIP.hPAgGLcBFUxOjvFsSE-nEwHaEK?pid=Api&P=0&h=180" alt="Ambience" />
+      <!-- <img src="https://source.unsplash.com/400x300/?bar,drinks" alt="Bar" /> -->
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form" action="mailto:skyheavenorai@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <h3>Location</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d743.8203815237935!2d79.45687765365295!3d25.985859337188106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1751151198256!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <div class="social-links">
+      <h3>Follow Us</h3>
+      <a href="https://instagram.com/" target="_blank">Instagram</a>
+      <a href="https://facebook.com/" target="_blank">Facebook</a>
+      <a href="https://wa.me/919999999999" target="_blank">WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Sky Heaven · Designed with ❤️ in Orai
+  </footer>
+
+</body>
+</html>
